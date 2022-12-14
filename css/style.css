@@ -1,0 +1,131 @@
+.button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.header {
+    position: relative;
+}
+
+.cross_title {
+    color: rgb(202, 0, 0);
+    font-family: helvetica;
+    visibility: hidden;
+}
+
+.circle_title {
+    color: blue;
+    font-family: helvetica;
+    position: relative;
+    top: -47px;
+    visibility: hidden;
+}
+
+.cross_title.active {
+    visibility: visible;
+    
+}
+.circle_title.active {
+    visibility: visible;
+}
+
+.circle_win {
+    color: green;
+    font-family: helvetica;
+    position: relative;
+    top: -95px;
+    visibility: hidden;
+}
+
+.cross_win {
+    color: green;
+    font-family: helvetica;
+    position: relative;
+    top: -142px;
+    visibility: hidden;
+}
+
+.cross_win.active {
+    visibility: visible;
+}
+
+.draw {
+    color: green;
+    font-family: helvetica;
+    position: relative;
+    top: -189px;
+    visibility: hidden;
+}
+
+.draw.active {
+    visibility: visible;
+}
+
+.circle_win.active {
+    visibility: visible;
+}
+
+.container {
+    width: 230px;
+    height: 240px;
+    margin: 0px auto 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    background: black;
+    margin: -170px auto 0 auto;
+}
+
+.block {
+    width: 70px;
+    height: 70px;
+    background: white;
+    margin: 0;
+    position: relative;
+}
+
+.cross {
+    width: 60px;
+    margin: 5px auto 0 auto;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.circle {
+    width: 60px;
+    margin: 5px auto 0 auto;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+#circle_one_one, #circle_one_two, #circle_one_tree,
+#circle_two_one, #circle_two_two, #circle_two_tree,
+#circle_tree_one, #circle_tree_two, #circle_tree_tree {
+    visibility: hidden;
+}
+.cr_one, #cross_one_two, #cross_one_tree,
+#cross_two_one, #cross_two_two, #cross_two_tree,
+#cross_tree_one, #cross_tree_two, #cross_tree_tree {
+    visibility: hidden;
+}
+
+#circle_one_one.active, #circle_one_two.active, #circle_one_tree.active,
+#circle_two_one.active, #circle_two_two.active, #circle_two_tree.active,
+#circle_tree_one.active, #circle_tree_two.active, #circle_tree_tree.active {
+    visibility: visible;
+}
+.cr_one.active, #cross_one_two.active, #cross_one_tree.active,
+#cross_two_one.active, #cross_two_two.active, #cross_two_tree.active,
+#cross_tree_one.active, #cross_tree_two.active, #cross_tree_tree.active {
+    visibility: visible;
+}
+
