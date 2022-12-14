@@ -41,6 +41,7 @@ const circleNine = document.querySelector('#circle_tree_tree');
 again.addEventListener('click', function(event){ 
     const crossWin = document.querySelector('.cross_win');
 const circleWin = document.querySelector('.circle_win');
+const draw = document.querySelector('.draw');
 
     block.forEach(block => {
         block.style = 'pointer-events: auto;';;
@@ -54,6 +55,7 @@ const circleWin = document.querySelector('.circle_win');
         circle.classList.remove('active');
       });
 
+      draw.classList.remove('active');
       crossWin.classList.remove('active');
       circleWin.classList.remove('active');
       circleTitle.classList.remove('active');
